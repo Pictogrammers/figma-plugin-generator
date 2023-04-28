@@ -1,0 +1,6 @@
+.library {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 3rem);
+  justify-content: space-around;
+}

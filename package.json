@@ -1,0 +1,39 @@
+{
+  "name": "figma-plugin-react-template",
+  "version": "1.0.0",
+  "homepage": "https://pictogrammers.com",
+  "description": "Figma Plugin for Material Design Icons",
+  "license": "MIT",
+  "repository": "github:Pictogrammers/figma-material-design-icons",
+  "author": "Michael Irigoyen <michael.irigoyen@pictogrammers.com>",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "build:watch": "webpack --mode=development --watch"
+  },
+  "dependencies": {
+    "@mdi/js": "^7.2.96",
+    "@mdi/react": "^1.6.1",
+    "@mdi/svg": "^7.2.96",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "react-virtuoso": "^4.3.2"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "~1.63.0",
+    "@types/react": "~18.2.0",
+    "@types/react-dom": "~18.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "css-loader": "~6.7.1",
+    "eslint": "^8.39.0",
+    "eslint-plugin-sort-destructure-keys": "^1.5.0",
+    "html-webpack-plugin": "~5.5.0",
+    "react-dev-utils": "~12.0.1",
+    "style-loader": "~3.3.1",
+    "ts-loader": "~9.4.2",
+    "typescript": "~5.0.4",
+    "url-loader": "~4.1.1",
+    "webpack": "~5.81.0",
+    "webpack-cli": "~4.10.0"
+  }
+}
