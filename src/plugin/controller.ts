@@ -1,5 +1,12 @@
 /* eslint-disable no-undef */
-figma.showUI(__html__, { height: 400, width: 300 });
+
+import libraryMeta from '../app/data/libraryMeta.json';
+
+figma.showUI(__html__, {
+  height: 550,
+  title: libraryMeta.name,
+  width: 400
+});
 
 figma.ui.onmessage = (msg) => {
   if (msg.type === 'place-icon') {

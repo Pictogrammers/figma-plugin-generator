@@ -1,6 +1,130 @@
+body {
+  font-family: 'Manrope';
+  margin: 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heading {
+  backdrop-filter: blur(10px);
+  background-color: hsl(194deg 64% 92% / 70%);
+  border-bottom: 1px solid hsl(194deg 64% 75%);
+  border-radius: 5px 5px 0 0;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  user-select: none;
+  z-index: 10;
+}
+
+.libraryInfo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.libraryName {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.libraryName img {
+  margin-right: .5rem;
+  max-width: 2rem;
+}
+
+.libraryInfo a {
+  text-decoration: none;
+}
+
+.controls {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.controls .searchBox {
+  background-color: hsl(0deg 0% 100%);
+  margin: 0;
+}
+
+.libraryContainer {
+  flex: 1;
+  padding-bottom: .5rem;
+}
+
+.noResults {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.noResults svg {
+  color: hsl(0deg 0% 56%);
+}
+
 .library {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, 3rem);
-  justify-content: space-around;
+  grid-template-columns: repeat(auto-fill, 3.5rem);
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.library button {
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.library button:hover {
+  background-color: hsl(194deg 64% 92% / 70%);
+}
+
+.library button:active,
+.library button:focus {
+  background-color: hsl(194deg 64% 92% / 70%);
+  outline: 1px solid hsl(194deg 64% 75%);
+}
+
+.virtuoso-grid-item {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  align-items: center;
+  background-color: hsl(289deg 100% 20%);
+  color: hsl(0deg 0% 100%);
+  display: flex;
+  font-size: .6rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer a {
+  align-items: center;
+  color: hsl(0deg 0% 100%);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+footer img {
+  margin-top: 3px;
+  max-width: 7rem;
 }

@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "lukas-tr.materialdesignicons-intellisense",
+      "stylelint.vscode-stylelint",
+    ]
+  }
