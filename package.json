@@ -1,6 +1,6 @@
 {
   "name": "figma-plugin-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://pictogrammers.com",
   "description": "Figma plugin generator for Pictogrammers icon libraries.",
   "license": "MIT",
