@@ -1,11 +1,18 @@
 {
   "name": "figma-plugin-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://pictogrammers.com",
   "description": "Figma plugin generator for Pictogrammers icon libraries.",
   "license": "MIT",
   "repository": "github:Pictogrammers/figma-plugin-generator",
   "author": "Michael Irigoyen <michael.irigoyen@pictogrammers.com>",
+  "contributors": [
+    "Michael Irigoyen <michael.irigoyen@pictogrammers.com>",
+    "Michael Richins <mr.grigri@gmail.com>"
+  ],
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "build": "webpack --mode=production",
     "get-data": "node --experimental-import-meta-resolve ./src/build/getLibraries.mjs",
@@ -39,5 +46,8 @@
     "url-loader": "~4.1.1",
     "webpack": "~5.81.0",
     "webpack-cli": "~4.10.0"
+  },
+  "volta": {
+    "node": "18.16.0"
   }
 }

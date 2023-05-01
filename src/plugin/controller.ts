@@ -10,10 +10,10 @@ figma.showUI(__html__, {
 
 figma.ui.onmessage = (msg) => {
   if (msg.type === 'place-icon') {
-    const icon = figma.createNodeFromSvg(`<svg><path d="${msg.path}"/></svg>`);
+    const icon = figma.createNodeFromSvg(`<svg width="24" height="24"><path d="${msg.path}"/></svg>`);
     icon.name = msg.name;
-    icon.x = figma.viewport.center.x;
-    icon.y = figma.viewport.center.y;
+    icon.x = Math.floor(figma.viewport.center.x);
+    icon.y = Math.floor(figma.viewport.center.y);
     figma.currentPage.selection = [icon];
   }
 };
