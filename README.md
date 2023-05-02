@@ -21,7 +21,7 @@
    - Material Design Icons Light - `npm run get-data mdil`
    - Memory Icons - `npm run get-data memory`
 4. Start the dev server up via `npm run dev`.
-5. In Figma, point the pluging at the `manifest.json` in the root of the repo.
+5. In Figma, point the plugin at the `manifest.json` in the root of the repo.
 
 ### Building for Publishing
 
