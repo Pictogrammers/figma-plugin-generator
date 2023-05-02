@@ -1,5 +1,11 @@
 # Pictogrammers Figma Plugin Generator
 
+## Plugins Available
+
+- Material Design Icons: <https://www.figma.com/community/plugin/1233997786384825580>
+- Material Design Icons Light: <https://www.figma.com/community/plugin/1234984883071493510>
+- Memory Icons: <https://www.figma.com/community/plugin/1234987873589988746>
+
 ## Development
 
 ### Requirements
