@@ -10,7 +10,8 @@ figma.showUI(__html__, {
 
 figma.ui.onmessage = (msg) => {
   if (msg.type === 'place-icon') {
-    const icon = figma.createNodeFromSvg(`<svg width="24" height="24"><path d="${msg.path}"/></svg>`);
+    const grid = msg.grid || 24;
+    const icon = figma.createNodeFromSvg(`<svg width="${grid}" height="${grid}"><path d="${msg.path}"/></svg>`);
     icon.name = msg.name;
     icon.x = Math.floor(figma.viewport.center.x);
     icon.y = Math.floor(figma.viewport.center.y);

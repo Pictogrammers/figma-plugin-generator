@@ -25,7 +25,7 @@ const App = () => {
   const visibleIcons = useIcons(debouncedSearchTerm);
 
   const placeIcon = (name: string, path: string) => {
-    parent.postMessage({ pluginMessage: { name, path, type: 'place-icon' } }, '*');
+    parent.postMessage({ pluginMessage: { grid: libraryMeta.grid, name, path, type: 'place-icon' } }, '*');
   };
 
   useEffect(() => {

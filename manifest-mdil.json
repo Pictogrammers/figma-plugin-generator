@@ -1,0 +1,8 @@
+{
+  "name": "Material Design Icons Light",
+  "id": "1234984883071493510",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma", "figjam"]
+}

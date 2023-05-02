@@ -21,7 +21,8 @@ try {
 
   const libraryMeta = librariesData[libraryId];
   libraryMeta.id = libraryId;
-  libraryMeta.name = config[libraryId];
+  libraryMeta.name = config[libraryId].name;
+  libraryMeta.grid = config[libraryId].grid;
 
   const libraryImageRes = await fetch(`https://pictogrammers.com/images/libraries/${libraryId}.svg`);
   const libraryImageData = await libraryImageRes.arrayBuffer();
@@ -32,6 +33,7 @@ try {
 
   await fs.writeFile('./src/app/data/libraryMeta.json', JSON.stringify(libraryMeta), { flag: 'w' });
   await fs.writeFile('./src/app/data/library.json', libraryData, { flag: 'w' });
+  await fs.copyFile(`./manifest-${libraryId}.json`, './manifest.json');
 
   // eslint-disable-next-line no-console
   console.log('INFO: Wrote library info to data folder.');
